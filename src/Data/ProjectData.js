@@ -17,7 +17,7 @@ export const myprojects = [
         name:"MyPortfolio",
         usedtech:"MERN Stack",
         description:"MyPortfolio is a fully functional platform that tells about my software journey. The platform is built using the MERN stack, which includes ReactJS, NodeJS, MongoDB, Tailwind, and ExpressJS.",
-        link:"",
+        link:"https://myporfolio-phi.vercel.app/",
         codelink:"https://github.com/shashank2314/myporfolio",
         image: myportfolio,
     },
