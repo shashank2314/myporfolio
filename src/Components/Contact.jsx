@@ -17,7 +17,7 @@ function Contact() {
     const formHandler = async(data) => {
         setloading(true);
         try{
-            console.log("url",Contact_api.CONTACT_US);
+            // console.log("url",Contact_api.CONTACT_US);
             await apiConnector(
                 "POST",
                 Contact_api.CONTACT_US,

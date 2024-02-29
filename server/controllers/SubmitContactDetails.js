@@ -5,16 +5,16 @@ exports.SubmitContactDetails = async(req,res) => {
         const {
             email,name,subject,message
         } = req.body;
-        console.log("Yah1")
+        // console.log("Yah1")
         if(!email || !name || !subject || !message){
             res.status(404).json({
                 success:false,
                 message:"Please fill all fields",
             })
         }
-        console.log("Yah2")
+        // console.log("Yah2")
         const data = await Contact.create({email,name,subject,message});
-        console.log("Yah3")
+        // console.log("Yah3")
         res.status(200).json({
             success:true,
             message:"Message Submit successfully",
