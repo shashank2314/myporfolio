@@ -1,4 +1,4 @@
-import { FaInstagram } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
 import myimage from "../assets/image.png";
 import { TypeAnimation } from "react-type-animation";
@@ -18,8 +18,8 @@ function About() {
                 </div>
 
                 <div className="bg-white w-[100%] p-5 flex justify-center items-center gap-4 text-2xl">
-                    <a href="https://www.instagram.com/shashank_prajapati7?igsh=MTJ2MXU1ZXY5Y25neQ=="  >
-                        <FaInstagram />
+                    <a href="https://leetcode.com/u/s7351hashank/"  >
+                        <SiLeetcode />
                     </a>
                     <a href="https://www.linkedin.com/in/shashank-kumar-62a2b1260/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"  >
                         <FaLinkedin />
@@ -30,7 +30,7 @@ function About() {
                 <div className="font-bold text-6xl text-black">HELLO</div>
                 <div className="font bold text-2xl text-black">This is Shashank Kumar.</div>
                 <TypeAnimation
-                    sequence={["I am Mern stack Developer.", 2000, "I am a UI/UX Developer.",1000,""]}
+                    sequence={["I am Mern stack Developer.", 2000, "I am a UI/UX Developer.", 1000, ""]}
                     className="font-bold h-fit md:h-[80px] text-3xl text-[#9e8e69]"
                     cursor={false}
                     repeat={Infinity}
@@ -45,7 +45,7 @@ function About() {
                         Resume
                     </Button>
                     <Button active={false} linkto={"/projects"}>
-                    Projects
+                        Projects
                     </Button>
                 </div>
                 <div className="text-xl text-justify">I am a software/web developer and here is my portfolio website. you will learn my software journey as a software engineer.</div>

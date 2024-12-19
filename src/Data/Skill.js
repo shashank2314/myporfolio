@@ -8,19 +8,31 @@ export const Skills = [
         Languages:[
             "C/C++",
             "Javascript",
-            "Java",
             "Python"
         ],
         Development:[
             "ReactJs",
+            "Nextjs",
             "NodeJs",
-            "MongoDB",
             "ExpressJs",
             "Tailwind",
             "Html",
             "CSS",
             "JavaScript",
-            "SQL",
+            "Typescript",
+            "Socket.io"
+        ],
+        Database:[
+            "MongoDB",
+            "MySQL"
+        ],
+        Software:[
+            "VS code",
+            "GitHub",
+            "Postman",
+            "MongoDB Compass",
+            "Vercel",
+            "Render"
         ]
     }
 ]

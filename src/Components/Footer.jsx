@@ -1,4 +1,4 @@
-import { FaInstagram } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { FaRegCopyright } from "react-icons/fa6";
@@ -32,8 +32,8 @@ function Footer({setactive}) {
                     } className="text-black">CONTACT</Link>
         </div>
         <div className="bg-white w-[100%] p-5 flex justify-center items-center gap-4 text-2xl">
-            <a href="https://www.instagram.com/shashank_prajapati7?igsh=MTJ2MXU1ZXY5Y25neQ=="  >
-                <FaInstagram />
+            <a href="https://leetcode.com/u/s7351hashank/"  >
+                <SiLeetcode />
             </a>
             <a href="https://www.linkedin.com/in/shashank-kumar-62a2b1260/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" >
                 <FaLinkedin />

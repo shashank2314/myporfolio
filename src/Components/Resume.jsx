@@ -1,4 +1,4 @@
-import resume from "../assets/Shashank Kumar Resume.pdf"
+import resume from "../assets/resume.pdf"
 import { Education } from "../Data/Education";
 import { IoLocation } from "react-icons/io5";
 import { FaUniversity } from "react-icons/fa";
@@ -6,6 +6,8 @@ import { FaGraduationCap } from "react-icons/fa";
 import { GiDuration } from "react-icons/gi";
 import { LuFileSpreadsheet } from "react-icons/lu";
 import { Skills } from "../Data/Skill";
+import { FaHandPointRight } from "react-icons/fa";
+import { Experience } from "../Data/Experience";
 export default function Resume() {
     return (
         <div className="flex flex-col items-center justify-center gap-5 w-11/12 lg:w-9/12 pb-10 ">
@@ -40,51 +42,100 @@ export default function Resume() {
                     }
                 </div>
             </div>
+
+            <div className="lg:w-9/12 sm:w-11/12"><div className="font-semibold text-3xl mt-10 mb-4">Experience</div></div>
+            <div className="flex flex-col justify-center items-center gap-10 w-full">
+                {
+                    Experience.map((data) => (
+                        <div key={data.id} className="flex flex-col justify-start rounded-md bg-white w-full lg:w-9/12 sm:w-11/12 px-10 py-4 text-xl shadow-[-35px_-35px_120px_-15px_rgba(0,0,0,0.3)] gap-2">
+                            <div className="flex w-full justify-between items-center">
+                                <h2 className="flex items-center text-black font-bold text-2xl">{data.title}</h2>
+                                <p className="flex items-center text-black text-2xl">{data.duration}</p>
+                            </div>
+                            <div className="flex items-center justify-start text-gray-600 font-semibold gap-1">
+                                {data.company}
+                            </div>
+                            <div className="flex items-start gap-1"><div className="p-1"><FaHandPointRight className="text-[20px]"/></div>{data.description}</div>
+                            <div className="flex items-start gap-1"><div className="p-1"><FaHandPointRight className="text-[20px]"/></div>TechStack: {data.TechStack}</div>
+                            <div className="flex items-start gap-1"><div className="p-1"><FaHandPointRight className="text-[20px]"/></div><a href={data.Certificate} className={`text-left text-[13px] sm:text-[20px] text-blue-500 underline `}>Certicate</a></div>
+                            
+                        </div>
+                    ))
+                }
+            </div>
             <div className="lg:w-9/12 sm:w-11/12"><div className="font-semibold text-3xl mt-10 mb-4">Skills</div></div>
-            
+
             <div className="flex flex-col justify-center rounded-md bg-white w-full lg:w-9/12 sm:w-11/12 px-10 py-4 text-xl shadow-[-35px_-35px_120px_-15px_rgba(0,0,0,0.3)] gap-6">
-                    <div className="flex flex-col items-start">
-                        <h2 className="font-semibold text-2xl">Professional Skillset</h2>
-                        {
-                            Skills.map((Skill,index)=>(
-                                <div key={index} className="flex gap-x-8 items-center text-gray-800 flex-wrap">
-                                    {
-                                        Skill.Professional.map((data,ind)=>(
-                                            <li key={ind}><span>{data}</span></li>
-                                        ))
-                                    }
-                                </div>
-                            ))
-                        }
-                    </div>
-                    <div className="flex flex-col items-start">
-                        <h2 className="font-semibold text-2xl">Programming Languages</h2>
-                        {
-                            Skills.map((Skill,index)=>(
-                                <div key={index} className="flex gap-x-8 items-center text-gray-800 flex-wrap">
-                                    {
-                                        Skill.Languages.map((data,ind)=>(
-                                            <li key={ind}><span className="relative -left-2">{data}</span></li>
-                                        ))
-                                    }
-                                </div>
-                            ))
-                        }
-                    </div>
-                    <div className="flex flex-col items-start">
-                        <h2 className="font-semibold text-2xl">Development Skills</h2>
-                        {
-                            Skills.map((Skill,index)=>(
-                                <div key={index} className="flex gap-x-8 items-center flex-wrap text-gray-800">
-                                    {
-                                        Skill.Development.map((data,ind)=>(
-                                            <li key={ind}><span className="relative -left-2">{data}</span></li>
-                                        ))
-                                    }
-                                </div>
-                            ))
-                        }
-                    </div>
+                <div className="flex flex-col items-start">
+                    <h2 className="font-semibold text-2xl">Professional Skillset</h2>
+                    {
+                        Skills.map((Skill, index) => (
+                            <div key={index} className="flex gap-x-8 items-center text-gray-800 flex-wrap">
+                                {
+                                    Skill.Professional.map((data, ind) => (
+                                        <li key={ind}><span>{data}</span></li>
+                                    ))
+                                }
+                            </div>
+                        ))
+                    }
+                </div>
+                <div className="flex flex-col items-start">
+                    <h2 className="font-semibold text-2xl">Programming Languages</h2>
+                    {
+                        Skills.map((Skill, index) => (
+                            <div key={index} className="flex gap-x-8 items-center text-gray-800 flex-wrap">
+                                {
+                                    Skill.Languages.map((data, ind) => (
+                                        <li key={ind}><span className="relative -left-2">{data}</span></li>
+                                    ))
+                                }
+                            </div>
+                        ))
+                    }
+                </div>
+                <div className="flex flex-col items-start">
+                    <h2 className="font-semibold text-2xl">Development Skills</h2>
+                    {
+                        Skills.map((Skill, index) => (
+                            <div key={index} className="flex gap-x-8 items-center flex-wrap text-gray-800">
+                                {
+                                    Skill.Development.map((data, ind) => (
+                                        <li key={ind}><span className="relative -left-2">{data}</span></li>
+                                    ))
+                                }
+                            </div>
+                        ))
+                    }
+                </div>
+                <div className="flex flex-col items-start">
+                    <h2 className="font-semibold text-2xl">Database</h2>
+                    {
+                        Skills.map((Skill, index) => (
+                            <div key={index} className="flex gap-x-8 items-center flex-wrap text-gray-800">
+                                {
+                                    Skill.Database.map((data, ind) => (
+                                        <li key={ind}><span className="relative -left-2">{data}</span></li>
+                                    ))
+                                }
+                            </div>
+                        ))
+                    }
+                </div>
+                <div className="flex flex-col items-start">
+                    <h2 className="font-semibold text-2xl">IDE/Softwares</h2>
+                    {
+                        Skills.map((Skill, index) => (
+                            <div key={index} className="flex gap-x-8 items-center flex-wrap text-gray-800">
+                                {
+                                    Skill.Software.map((data, ind) => (
+                                        <li key={ind}><span className="relative -left-2">{data}</span></li>
+                                    ))
+                                }
+                            </div>
+                        ))
+                    }
+                </div>
             </div>
         </div>
     );
