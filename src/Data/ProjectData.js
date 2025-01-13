@@ -2,6 +2,7 @@ import studynotion from "../assets/studynotion.png"
 import myportfolio from "../assets/myporfolio.png"
 import shopapp from "../assets/shopapp.png"
 import HelloHii from "../assets/HelloHii.png"
+import ExpenseTracker from "../assets/ExpenseTracker.png"
 
 export const myprojects = [
     {
@@ -24,6 +25,15 @@ export const myprojects = [
     },
     {
         id:3,
+        name:"Expense Tracker",
+        usedtech:"MERN Stack",
+        description:"Expense Tracker is a web application designed to help users manage and track their personal expenses.This intuitive app allows users to add, edit, delete, and view expenses with ease, giving them a comprehensive understanding of their spending habits. Built using React, TailwindCSS,ReduxJs,NodeJs,MongoDB,ExpressJs and other modern technologies, it provides a seamless and responsive experience for budgeting",
+        link:"https://expense-tracker-kappa-neon.vercel.app/",
+        codelink:"https://github.com/shashank2314/Expense-Tracker",
+        image: ExpenseTracker,
+    },
+    {
+        id:4,
         name:"MyPortfolio",
         usedtech:"MERN Stack",
         description:"MyPortfolio is a fully functional platform that tells about my software journey. The platform is built using the MERN stack, which includes ReactJS, NodeJS, MongoDB, Tailwind, and ExpressJS.",
@@ -32,7 +42,7 @@ export const myprojects = [
         image: myportfolio,
     },
     {
-        id:4,
+        id:5,
         name:"Shopapp",
         usedtech:"Reactjs",
         description:"Shopapp is a basic react functional and frontend application with best ui design app. It contains reactjs , external css and some basic functionality of reactjs.",
