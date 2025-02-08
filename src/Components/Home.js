@@ -22,7 +22,7 @@ const Home = () => {
                 className="text-center"
             >
                 <div className="flex flex-row gap-20 justify-between align-start">
-                    <div className="flex flex-col justify-start items-center ">
+                    <div className="hidden md:flex flex-col justify-start items-center ">
                         <div
                             className="bg-violet-500 w-5 h-5 rounded-full"
                         ></div>
