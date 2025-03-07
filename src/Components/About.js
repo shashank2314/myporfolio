@@ -1,6 +1,6 @@
 import { SiLeetcode } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
-import myimage from "../assets/image.png";
+import myimage from "../assets/image.jpeg";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Button } from "./Button2";
