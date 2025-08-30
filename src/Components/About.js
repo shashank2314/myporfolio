@@ -1,6 +1,6 @@
 import { SiLeetcode } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
-import myimage from "../assets/image.jpg";
+import myimage from "../assets/image.jpeg";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Button } from "./Button2";
@@ -32,7 +32,7 @@ function About() {
 
                     <div className="flex flex-col gap-4 justify-between items-center text-xl prose prose-lg dark:prose-invert py-5 md:pr-5">
                         <p>
-                            Hi, I&apos;m Shashank Kumar, a passionate Software Developer and currently pursuing Bachelor&apos;s of Technology majoring in Computer Science and Engineering at IIIT Kota.
+                            Hi, I&apos;m Shashank Kumar, a passionate Software Developer and currently pursuing Master&apos;s of Technology majoring in Computer Science and Engineering at MNIT JAIPUR and have done Bachelor&apos;s of Technology majoring in Computer Science and Engineering at IIIT Kota.
                             You can learn more about my Software Journey as a Software Engineer.
                         </p>
                         <div className="flex justify-center space-x-4">
@@ -55,7 +55,7 @@ function About() {
                                 </Link>
                             </Button>
                             <Button variant="ghost" size="icon" asChild>
-                                <Link to="mailto:2021kucp1137@iiitkota.ac.in" target="_blank">
+                                <Link to="mailto:shashankkumar.iiitk@gmail.com" target="_blank">
                                     <Mail className="h-6 w-6" />
                                     <span className="sr-only">Gmail</span>
                                 </Link>

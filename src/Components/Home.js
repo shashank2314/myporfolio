@@ -36,7 +36,7 @@ const Home = () => {
                             </span>
                         </h1>
                         <p className="md:mb-8 mb-4 text-xl text-muted-foreground">
-                            Computer Science Student at IIIT Kota
+                            Computer Science Student at MNIT JAIPUR
                         </p>
                         <TypeAnimation
                             sequence={["I am a Skilled Developer.", 2000, "I am a Passionate Competitive Programmer.", 1000, ""]}

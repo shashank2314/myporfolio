@@ -66,7 +66,7 @@ function Contact() {
                             <div className="space-y-4">
                                 <div className="flex items-center gap-3">
                                     <Mail className="h-5 w-5" />
-                                    <span><Link to="mailto:2021kucp1137@iiitkota.ac.in" target="_blank">Email</Link></span>
+                                    <span><Link to="mailto:shashankkumar.iiitk@gmail.com" target="_blank">Email</Link></span>
                                 </div>
                                 <div className="flex items-center gap-3">
                                     <Linkedin className="h-5 w-5" />
